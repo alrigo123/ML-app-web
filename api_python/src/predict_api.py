@@ -42,7 +42,7 @@ def get_prediction_xgboost(
         return {"error": str(e)}
 
 # 5) Endpoint GET para predicción con Random Forest
-@predict_router.get("/random_forest")
+@predict_router.get("/randomforest")
 def get_prediction_random_forest(
     n: int = Query(..., description="Número de días a predecir"),
     variable: str = Query(..., description="Variable objetivo: Temp_max, Temp_min, Humedad o Precipitacion")

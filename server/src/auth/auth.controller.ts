@@ -1,10 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable prettier/prettier */
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable prettier/prettier */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { Body, Controller, HttpCode, HttpStatus, Post, UseGuards, Request, Get, Req } from "@nestjs/common";
 import { LoginDto } from "./dto/login.dto";
 import { RegisterDto } from "./dto/register.dto";

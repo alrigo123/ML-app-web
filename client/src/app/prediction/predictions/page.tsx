@@ -100,7 +100,7 @@ const PredictionsPage: React.FC = () => {
                                         onChange={(e) => setModelType(e.target.value)}
                                         className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none pr-10"
                                     >
-                                        <option value="Random_Forest">Random Forest</option>
+                                        <option value="RandomForest">Random Forest</option>
                                         <option value="LSTM">LSTM</option>
                                         <option value="XGBoost">XGBoost</option>
                                         <option value="SARIMA">(S)ARIMA</option>
