@@ -72,7 +72,7 @@ def pred_xgb(
 
 @router.get("/randomforest")
 def pred_rf(
-    n: int = Query(..., gt=0, description="Días a predecir"),
+    n: int    = Query(..., gt=0, description="Días a predecir"),
     variable: str = Query(..., description="Temp_max, Temp_min, Humedad o Precipitacion")
 ):
     try:

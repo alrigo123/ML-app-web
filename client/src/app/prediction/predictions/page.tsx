@@ -68,6 +68,7 @@ const PredictionsPage: React.FC = () => {
         setN(1);
         setVariable("Temp_max");
         setModelType("RandomForest");
+        setLoading(false);
     };
 
     return (
