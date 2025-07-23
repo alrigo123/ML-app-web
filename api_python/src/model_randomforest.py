@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from data_loader import load_and_preprocess_data
+from sklearn.ensemble import RandomForestRegressor
 
 # Definir la ruta del CSV
 CSV_PATH = '../../databases/TIME_SERIES-Andenes_Diario-13-23.csv'
@@ -22,11 +23,10 @@ def train_model(target_variable: str):
     X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, shuffle=False)
     
     # Configuración y entrenamiento del modelo XGBoost
-    model = xgb.XGBRegressor(
-        objective='reg:squarederror',
-        n_estimators=100,    # Puedes ajustar estos parámetros
-        max_depth=10,
-        learning_rate=0.01
+    model = RandomForestRegressor(
+      n_estimators=100,    # Puedes ajustar estos parámetros
+      max_depth=10,
+      random_state=42
     )
     model.fit(X_train, y_train, eval_set=[(X_train, y_train), (X_test, y_test)], verbose=False)
     

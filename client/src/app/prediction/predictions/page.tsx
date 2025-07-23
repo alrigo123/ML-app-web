@@ -30,6 +30,11 @@ const PredictionsPage: React.FC = () => {
         setError(null); // Clear any previous errors.
         setPrediction(null); // Clear previous predictions.
 
+        if (n > 15) {
+            setError("Solo se permiten predicciones hasta 15 días.");
+            return;
+        }
+
         try {
             // Construct the API URL dynamically based on the selected model.
             // IMPORTANT: For Canvas preview, the API URL is hardcoded.
@@ -129,8 +134,12 @@ const PredictionsPage: React.FC = () => {
                                         onChange={(e) => setN(Number(e.target.value))}
                                         className="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 pl-10"
                                         min="1" // Ensure at least 1 day is selected
+                                        max={15}
                                         required
                                     />
+                                    {n > 15 && (
+                                        <p className="text-red-400 mt-2 text-sm">Solo se permiten predicciones hasta 15 días.</p>
+                                    )}
                                     {/* Calendar icon (inline SVG) */}
                                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-calendar">
