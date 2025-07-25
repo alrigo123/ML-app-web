@@ -1,0 +1,39 @@
+BEST MAX DEPTH NONE
+**========== MEJOR MODELO ==========
+Variable: Temp_max
+Mejor número de lags: 9
+Mejor RMSE (test): 1.761
+Mejor MAE (test): 1.330
+Hiperparámetros: {'n_estimators': 700, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 200, 'bootstrap': True}
+Modelo guardado como: d_rf_Temp_max_best_Model.pkl
+(168 MB)
+
+
+========== MEJOR MODELO ==========
+Variable: Temp_max
+Mejor número de lags: 9
+Mejor RMSE (test): 1.761
+Mejor MAE (test): 1.330
+Hiperparámetros: {'n_estimators': 700, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 100, 'bootstrap': True}
+Modelo guardado como: d_rf_Temp_max_best_Model.pkl
+(168 mb)
+
+models above are similar, mas depth is the differnece
+
+BEST DEPTH  tryy AND GET THE LOWEST VALUE
+
+========== MEJOR MODELO ==========
+Variable: Temp_max
+Mejor número de lags: 9
+Mejor RMSE (test): 1.761
+Mejor MAE (test): 1.331
+Hiperparámetros: {'n_estimators': 800, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 250, 'bootstrap': True}
+Modelo guardado como: d_rf_Temp_max_best_Model.pkl
+(192 MB)
+
+
+model = RandomForestRegressor(max_depth=None, n_estimators= 500, min_samples_split= 2, min_samples_leaf= 1, bootstrap= True, oob_score=True) # CHANGE WITH YOUR OWN PARAMETERS
+120MB
+
+model = RandomForestRegressor(max_depth=5, n_estimators= 800, min_samples_split= 2, min_samples_leaf= 1, bootstrap= True, oob_score=True) # CHANGE WITH YOUR OWN PARAMETERS
+3MB
