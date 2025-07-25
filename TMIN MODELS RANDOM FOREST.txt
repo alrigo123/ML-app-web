@@ -1,0 +1,17 @@
+BEST MAX DEPTH NONE
+**========== MEJOR MODELO ==========
+Variable: Temp_min
+Mejor número de lags: 20
+Mejor RMSE (test): 1.298
+Mejor MAE (test): 1.014
+Hiperparámetros: {'n_estimators': 2000, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_depth': 150, 'bootstrap': True}
+Modelo guardado como: d_rf_Temp_min_best_Model.pkl
+(233 MB) 1hr
+
+BEST DEPTH  tryy AND GET THE LOWEST VALUE
+
+
+
+
+
+
