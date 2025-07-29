@@ -19,8 +19,6 @@ Modelo guardado como: d_rf_Temp_min_best_Model.pkl
 
 BEST MAX None  DEPTH
 
-
-
 ========== MEJOR MODELO ==========
 Variable: Temp_min
 Mejor número de lags: 30
@@ -31,3 +29,6 @@ Modelo guardado como: d_rf_Temp_min_best_Model.pkl
 (183MB)
 
 BEST DEPTH  tryy AND GET THE LOWEST VALUE
+
+
+RF STANDART
