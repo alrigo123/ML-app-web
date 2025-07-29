@@ -37,3 +37,13 @@ Mejor MAE (test): 2.104
 Hiperparámetros: {'n_estimators': 1000, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_depth': None, 'bootstrap': True}
 Modelo guardado como: d_rf_Precipitacion_best_Model.pkl
 ???
+
+
+========== MEJOR MODELO ==========
+Variable: Precipitacion
+Mejor número de lags: 16
+Mejor RMSE (test): 3.811
+Mejor MAE (test): 2.090
+Hiperparámetros: {'n_estimators': 1000, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_depth': 30, 'bootstrap': True}
+Modelo guardado como: d_rf_Precipitacion_best_Model.pkl
+80.5MB
