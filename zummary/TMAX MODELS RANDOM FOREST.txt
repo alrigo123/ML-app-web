@@ -37,3 +37,20 @@ model = RandomForestRegressor(max_depth=None, n_estimators= 500, min_samples_spl
 
 model = RandomForestRegressor(max_depth=5, n_estimators= 800, min_samples_split= 2, min_samples_leaf= 1, bootstrap= True, oob_score=True) # CHANGE WITH YOUR OWN PARAMETERS
 3MB
+
+model = RandomForestRegressor(max_depth=10, n_estimators= 800, min_samples_split= 2, min_samples_leaf= 1, bootstrap= True, oob_score=True) # CHANGE WITH YOUR OWN PARAMETERS
+40MB
+
+model = RandomForestRegressor(max_depth=20, n_estimators= 800, min_samples_split= 2, min_samples_leaf= 1, bootstrap= True, oob_score=True) # CHANGE WITH YOUR OWN PARAMETERS
+173MB
+
+model = RandomForestRegressor(max_depth=15, n_estimators= 800, min_samples_split= 2, min_samples_leaf= 1, bootstrap= True, oob_score=True) # CHANGE WITH YOUR OWN PARAMETERS
+119MB
+
+## USED ###
+LAGS 9 
+model = RandomForestRegressor(max_depth=13, n_estimators= 800, min_samples_split= 2, min_samples_leaf= 1, bootstrap= True, oob_score=True) # CHANGE WITH YOUR OWN PARAMETERS
+87.1
+
+model = RandomForestRegressor(max_depth=14, n_estimators= 800, min_samples_split= 2, min_samples_leaf= 1, bootstrap= True, oob_score=True) # CHANGE WITH YOUR OWN PARAMETERS
+103MB 

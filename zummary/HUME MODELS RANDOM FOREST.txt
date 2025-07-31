@@ -1,0 +1,19 @@
+========== MEJOR MODELO ==========
+Variable: Humedad
+Mejor número de lags: 25
+Mejor RMSE (test): 4.584
+Mejor MAE (test): 3.540
+Hiperparámetros: {'n_estimators': 1000, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_depth': 30, 'bootstrap': True}
+Modelo guardado como: d_rf_Humedad_best_Model.pkl
+117 MB
+
+
+
+========== MEJOR MODELO ==========
+Variable: Humedad
+Mejor número de lags: 25
+Mejor RMSE (test): 4.584
+Mejor MAE (test): 3.539
+Hiperparámetros: {'n_estimators': 1500, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_depth': None, 'bootstrap': True}
+Modelo guardado como: d_rf_Humedad_best_Model.pkl
+175MB
